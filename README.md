@@ -2,6 +2,8 @@
 
 An educational project simulating a **Library Management System** using **HTML, CSS, and JavaScript (OOP)**. The project demonstrates object-oriented programming concepts while allowing users to manage books interactively.
 
+---
+
 ## Features
 
 1. **Book Management**
@@ -37,8 +39,11 @@ An educational project simulating a **Library Management System** using **HTML, 
    * **Polymorphism:** `displayInfo()` overridden in `ReferenceBook`.
    * **Abstraction:** `Library` class handles core book management logic.
 
+---
+
 ## Project Structure
 
+```
 project-root/
 │
 ├─ index.html            ← User interface
@@ -50,7 +55,9 @@ project-root/
 │   │   └─ Library.js    ← Library class and book management logic
 │   └─ Css/
 │       └─ style.css     ← Project CSS
+```
 
+---
 
 ## Classes Overview
 
@@ -85,6 +92,8 @@ project-root/
   * `toggleAvailability(id)`
   * `saveToLocalStorage()` & `loadFromLocalStorage()`
 
+---
+
 ## User Interaction (main.js)
 
 1. **Adding a Book**
@@ -104,6 +113,8 @@ project-root/
    * Typing in the search field filters books in real-time.
    * Category selection reduces results to the chosen category.
 
+---
+
 ## Getting Started
 
 1. Clone or download the project.
@@ -111,6 +122,8 @@ project-root/
 3. All books saved in `localStorage` are loaded automatically.
 4. Use the **Add Book** form to insert new books.
 5. Use **Search & Filter** to find books quickly.
+
+---
 
 ## Additional Notes
 
