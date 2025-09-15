@@ -25,9 +25,6 @@ export class Book {
     set category(value) { this.#category = value; }
     set isAvailable(value) { this.#isAvailable = !!value; }
 
-    // displayInfo() {
-    //     return `Title: ${this.title}, Author: ${this.author}, Category: ${this.category}, Available: ${this.isAvailable ? 'Yes' : 'No'}`;
-    // }
     displayInfo() {
         return `
             <p class="contain-card">Title: <span>${this.title}</span></p>

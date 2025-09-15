@@ -11,9 +11,6 @@ export class ReferenceBook extends Book {
     get locationCode() { return this.#locationCode; }
     set locationCode(value) { this.#locationCode = value; }
 
-    // displayInfo() {
-    //     return `${super.displayInfo()}, Location: ${this.locationCode}`;
-    // }
     displayInfo() {
         return `
             ${super.displayInfo()}
