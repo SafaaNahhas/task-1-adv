@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Library Management System</title>
+    <meta name="description" content="A simple educational Library Management System built with HTML, CSS, and JavaScript (OOP). Includes book management, search, filters, and availability control.">
+    <meta name="keywords" content="Library Management System, JavaScript OOP, Book Management, HTML CSS JS Project, Educational Project">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+</head>
+<body>
+    <header>
+    <h1 class="header-title">Library Management System</h1>
+    </header>
+
+    <main>
+      <section class="add-form">
+        <h2 class="Add-title">Add a New Book</h2>
+        <div class="form-group">
+        <label for="newTitle">Title:</label>
+        <input type="text" id="newTitle" placeholder="Enter book title" maxlength="100">
+        </div>
+        <div class="form-group">
+        <label for="newAuthor">Author:</label>
+        <input type="text" id="newAuthor" placeholder="Enter author's name" maxlength="50">
+        </div>
+        <div class="form-group">
+        <label for="newCategory">Category:</label>
+        <select id="newCategory">
+        </select>
+        </div>
+        <div id="newCategoryInputContainer" style="display: none;" >
+            <label for="newCategoryInput">New Category:</label>
+            <input type="text" id="newCategoryInput" placeholder="Enter new category" maxlength="30">
+        </div>
+        <div class="form-group">
+        <label for="bookType">Book Type:</label>
+        <select id="bookType">
+          <option value="Book">Regular Book</option>
+          <option value="ReferenceBook">Reference Book</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="newLocationCode" id="newLocationLabel"  class="d-none" >Location Code:</label>
+        <input type="text" id="newLocationCode" placeholder="Location code (for reference books only)" maxlength="20">
+        </div>
+        <div id="errorMessage" class="error-message" style="display:none;"></div>
+        <button id="addButton" >Add</button>
+
+      </section>
+
+      <section class="controlSection">
+        <h2 class="controls-title">Search & Filter</h2>
+        <div class="controls">
+        <div class="form-group">
+        <label for="searchInput" class="label-controls">Search:</label>
+        <input type="text" id="searchInput" placeholder="Search by title or author">
+        </div>
+        <div class="form-group">
+        <label for="categorySelect" class="label-controls">Filter by Category:</label>
+        <select id="categorySelect">
+          <option value="">All Categories</option>
+        </select>
+        </div>
+        </div>
+      </section>
+
+      <section id="booksSection">
+        <h2 class="books-title">Show All Books</h2>
+        <div id="booksContainer" class="books-grid">
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p class="footer-paragraph">&copy; 2025 Library Management System - Task 1 Adv</p>
+    </footer>
+    <script  type="module" src="./assets/Js/main.js" defer></script>
+</body>
+</html>
